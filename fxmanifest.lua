@@ -3,7 +3,7 @@ game 'gta5'
 
 name 'rc_admin_tags'
 description 'Overhead staff tags for ESX, with identifier overrides for txAdmin superadmins'
-author 'codejunkie'
+author 'oo_mayr'
 version '1.0.0'
 
 shared_scripts {

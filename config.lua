@@ -12,11 +12,12 @@ Config.SeeOwnTag = true
 -- Max distance (in meters) at which a tag becomes visible.
 Config.DrawDistance = 20.0
 
--- Text size of the floating tag.
-Config.TextScale = 0.35
+-- Text size of the floating tag. Higher = bigger.
+Config.TextScale = 0.65
 
 -- Height above the player's feet to draw the tag (~1.0 is roughly above the head).
-Config.HeightOffset = 1.05
+-- Raise this to sit above the server-id number, lower it to overlap with it.
+Config.HeightOffset = 1.0
 
 -- How often (ms) the server re-checks who is near. Lower = snappier, higher = cheaper.
 Config.NearCheckWait = 500
