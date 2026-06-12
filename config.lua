@@ -1,5 +1,8 @@
 Config = {}
 
+-- 'auto' | 'esx' | 'qb' — which framework to bind to ('auto' detects whichever is running).
+Config.Framework = 'auto'
+
 -- Command players type to toggle their own tag on/off.
 Config.Command = 'admintag'
 
@@ -24,7 +27,9 @@ Config.NearCheckWait = 500
 
 -----------------------------------------------------------------------------------
 -- GROUP LABELS
--- Maps an ESX group (from xPlayer.getGroup()) to the label shown above the player.
+-- Maps a framework group to the label shown above the player.
+--   ESX    : the group from xPlayer.getGroup() (e.g. 'admin', 'mod')
+--   QBCore : a permission level from qb-core (e.g. 'god', 'admin', 'mod')
 -- Color codes: ~r~ red  ~g~ green  ~b~ blue  ~y~ yellow  ~o~ orange  ~p~ purple  ~w~ white
 -----------------------------------------------------------------------------------
 Config.GroupLabels = {
@@ -38,7 +43,7 @@ Config.GroupLabels = {
 
 -----------------------------------------------------------------------------------
 -- IDENTIFIER OVERRIDES
--- Force a specific tag for a player by identifier, IGNORING their ESX group.
+-- Force a specific tag for a player by identifier, IGNORING their framework group.
 --
 -- This is REQUIRED for txAdmin superadmins: ESX forcibly sets their group to
 -- "admin" (logged as "Superadmin detected, setting group to admin"), so the only
